@@ -1,5 +1,15 @@
 # 1.什么是ark-log？
 &emsp;&emsp;ark-leaf是ark系列框架中的日志框架。
+### 1.1.ark-log 功能示例
+1)http日志输出：<br/>
+![http日志输出](https://github.com/javaboy863/ark-log/blob/main/img/1.png "http日志输出")<br/>
+2)dubbo日志输出：<br/>
+![dubbo日志输出](https://github.com/javaboy863/ark-log/blob/main/img/2.png "dubbo日志输出")<br/>
+3)日志分级：<br/>
+![日志分级](https://github.com/javaboy863/ark-log/blob/main/img/3.png "日志分级")<br/>
+4)error日志输出：<br/>
+![error日志输出](https://github.com/javaboy863/ark-log/blob/main/img/4.png "error日志输出")<br/>
+
 # 2.ark-log解决了什么问题？
 &emsp;&emsp;日志是发现和定位问题的基础，绝大部分稳定性相关的工作都是在围绕着日志工作进行的。方法的核心出入参，是监控的关键。如果每个业务研发要穿插在业务代码中打印，总是容易遗漏，且侵入性非常强。
 因此，我开发了一套日志框架，抽象出日志注解模块，无侵入的打印方法的出入参，请求路径，全链路url，耗时，并可以用作日志分级等。
@@ -31,12 +41,3 @@
 > #设置日志的root level，默认值：INFO
 > ark.log.root.level=INFO
 >```
-# 4.ark-log 功能截图
-http日志输出：<br/>
-![http日志输出](https://github.com/javaboy863/ark-log/blob/main/img/1.png "http日志输出")<br/>
-dubbo日志输出：<br/>
-![dubbo日志输出](https://github.com/javaboy863/ark-log/blob/main/img/2.png "dubbo日志输出")<br/>
-日志分级：<br/>
-![日志分级](https://github.com/javaboy863/ark-log/blob/main/img/3.png "日志分级")<br/>
-error日志输出：<br/>
-![error日志输出](https://github.com/javaboy863/ark-log/blob/main/img/4.png "error日志输出")<br/>
